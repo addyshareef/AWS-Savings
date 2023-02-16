@@ -1,4 +1,4 @@
-import boto3
+import boto3       
 
 # create clients for each AWS account
 client1 = boto3.client('s3', aws_access_key_id='ACCESS_KEY_ID_1', aws_secret_access_key='SECRET_ACCESS_KEY_1')
@@ -21,3 +21,4 @@ total_storage_gb = total_storage / (1024 ** 3)
 
 # print the total storage in gigabytes
 print(f"Total storage across three AWS accounts: {total_storage_gb:.2f} GB")
+##
